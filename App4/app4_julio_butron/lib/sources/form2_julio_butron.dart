@@ -61,13 +61,13 @@ class _Form2State extends State<Form2> {
                     children: [
                       const SizedBox(height: 20),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           if (_currentStep > 0)
                             TextButton(
                               onPressed: details.onStepCancel,
                               child: const Text('Back'),
                             ),
+                          const Spacer(),
                           if (_currentStep < 2)
                             ElevatedButton(
                               onPressed: details.onStepContinue,
